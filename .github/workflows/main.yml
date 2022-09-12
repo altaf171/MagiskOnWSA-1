@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v2
     - name: Running Script
       run: |
-        ls
-        /scripts/run.sh
+        ./scripts/run.sh
         
     - name: Upload WSA DATA
       uses: actions/upload-artifact@v2.3.1
