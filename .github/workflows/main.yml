@@ -13,8 +13,8 @@ jobs:
     steps:
     - name: Running Script
       run: |
-        cd scripts
-        ./run.sh
+        ls
+        /scripts/run.sh
         
     - name: Upload WSA DATA
       uses: actions/upload-artifact@v2.3.1
